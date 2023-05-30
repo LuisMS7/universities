@@ -10,5 +10,16 @@ module.exports = {
 	plugins: ['react-refresh'],
 	rules: {
 		'react-refresh/only-export-components': 'warn',
+		indent: ['error', 'tab', { SwitchCase: 1 }],
+		'linebreak-style': ['error', 'unix'],
+		quotes: ['error', 'single'],
+		semi: ['error', 'always'],
+		'max-len': [
+			'error',
+			{
+				code: 80,
+				tabWidth: 4,
+			},
+		],
 	},
 };
